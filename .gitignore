@@ -2,4 +2,6 @@ env/
 stuff/
 db.sqlite3
 .env
-__pycache__/
+Posts/__pycache__/
+blog/__pycache__/
+*.pyc
