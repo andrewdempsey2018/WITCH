@@ -1,16 +1,89 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>My blog...</h1>
+    <!-- hero -->
 
-{% for post in posts %}
-<p>
-    <a href="{% url 'view_post' slug=post.slug %}">{{ post.title }}</a>
-    {% if request.user.is_staff %}
-    <small><a href="{% url 'edit_post' slug=post.slug %}">[edit]</a></small>
-    <small><a href="{% url 'delete_post' slug=post.slug %}">[delete]</a></small>
-    {% endif %}
-</p>
-{% endfor %}
+    <div class="container-fluid col-xxl-8 " id="hero">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Empowering women to work in Tech.</h1>
+                <p class="lead">We are here to support women in their entry to the tech industry with focus on
+                    education, community and support.</p>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-lg px-4 me-md-2">Read more</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <section class="container" id="cards">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/6457579/pexels-photo-6457579.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/6457515/pexels-photo-6457515.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-lg px-4 me-md-2">Find out more</button>
+
+        <h2>Featured Tweets #gendergap</h2>
+
+        <!-- twitter feed carousel -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>I will be filled with Tweets</p>
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <p>I will also be filled with Tweets</p>
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <p>I will deffo be filled with Tweets</p>
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
