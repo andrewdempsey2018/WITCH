@@ -153,29 +153,24 @@ If you would like to test our administration functionality, we have set up an ac
 #### Python Libraries
 - [OS](https://docs.python.org/3/library/os.html)
 - [Date time](https://docs.python.org/3/library/datetime.html)
-- [Unittest](https://docs.python.org/3/library/unittest.html)
+
 
 
 ## Features
   
 <details><summary>Home</summary>
-<img src="/readme/image-feature-home.PNG">
 </details>  
   
 <details><summary>Stories</summary>
-<img src="">
 </details>  
   
 <details><summary>Career</summary>
-<img src="">
 </details>  
   
 <details><summary>Education</summary>
-<img src="">
 </details>  
   
 <details><summary>About</summary>
-<img src="">
 </details>  
  
 
